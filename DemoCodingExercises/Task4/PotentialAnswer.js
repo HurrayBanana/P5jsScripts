@@ -46,7 +46,7 @@ function waveMessage(t, x, y){
   angle += 0.015;
 
   for (let i = 0; i < t.length; i++){
-    xpos = x + i * 10;
+    xpos = x + i * gap;
     ypos = y+80*sin(angle+xpos/100);
     
     text(t.substring(i,i+1), xpos, ypos);
