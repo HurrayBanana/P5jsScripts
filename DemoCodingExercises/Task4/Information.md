@@ -7,6 +7,7 @@ Add the  angle variable and waveMessage() function to your skectch
 
 and add a call in the draw function to call the waveMessage function
 */
+<p>
 <code>
 waveMessage(m, 0, 200)
 
@@ -23,6 +24,6 @@ function logicSimple(){
   }
 }
 </code>
-
-https://youtu.be/os5Dzn3-0NA
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/os5Dzn3-0NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
