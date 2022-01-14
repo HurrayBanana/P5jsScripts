@@ -7,7 +7,7 @@ Add the  angle variable and waveMessage() function to your skectch
 
 and add a call in the draw function to call the waveMessage function
 */
-
+<code>
 waveMessage(m, 0, 200)
 
 
@@ -22,5 +22,7 @@ function logicSimple(){
       p = 0;
   }
 }
+</code>
 
 https://youtu.be/os5Dzn3-0NA
+
