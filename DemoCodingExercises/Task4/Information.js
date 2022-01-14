@@ -11,7 +11,7 @@ and add a call in the draw function to call the waveMessage function
 waveMessage(m, 0, 200)
 
 /*
-You may wish to comment the line in logicSimple() that increments p so you can concentrate on the shap of the wave
+You may wish to comment the line in logicSimple() that increments p so you can concentrate on the shape of the wave
 */
 
 function logicSimple(){
