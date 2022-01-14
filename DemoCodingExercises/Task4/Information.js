@@ -23,3 +23,4 @@ function logicSimple(){
   }
 }
 
+https://youtu.be/os5Dzn3-0NA
