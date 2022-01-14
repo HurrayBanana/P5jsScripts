@@ -8,6 +8,6 @@ Add the  angle variable and waveMessage() function to your skectch
 and add a call in the draw function to call the waveMessage function
 */
 
-waveMessage(m, 0, 150)
+waveMessage(m, 0, 200)
 
 
