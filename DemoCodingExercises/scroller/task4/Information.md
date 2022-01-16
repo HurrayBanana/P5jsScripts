@@ -1,4 +1,5 @@
-The lead coder as added a more funky way of drawing the pportion of the message
+# SineWave scroller
+The lead coder as added a more funky way of drawing the portion of the message
 
 he wants you to experiment with it to get a pleasing affect.
 
