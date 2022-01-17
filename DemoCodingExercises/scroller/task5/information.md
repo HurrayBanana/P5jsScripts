@@ -17,7 +17,7 @@ If the offset is greater than the value of gap (the width of a character) we:
 * set the offset to 0
 * increase our message pointer p by 1 (and do the previous rest of that if over message length
 
-
+```
     function logicSimple(){
       delay++;
       if (delay % 30 == 0)
@@ -32,3 +32,4 @@ If the offset is greater than the value of gap (the width of a character) we:
         }
       }
     }
+```
