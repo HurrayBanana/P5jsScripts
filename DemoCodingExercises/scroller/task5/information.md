@@ -33,3 +33,4 @@ If the offset is greater than the value of gap (the width of a character) we:
       }
     }
 ```
+You may need to decrease the delay time as we are using that to control the pixel scrolling speed now rather than character scrolling.
