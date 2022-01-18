@@ -25,7 +25,7 @@ If the offset is greater than the value of gap (the width of a character) we:
         // code to increase the value of pixelOffset
         // if to check if pixelOffset is bigger than a character width
         {        
-          //  reset pixelOffset then increase scroll position as before
+          //  reset pixelOffset here then increase scroll position as before
           p++
           if (p == message.length)
             p = 0;
