@@ -19,10 +19,9 @@ You will need to modify the call to the `segment()` function to use this new var
 function draw() {
   background(200);
   logicSimple();
-  let m = segment(message, p, 30);
+  let m = segment(message, p, 30); // change this function call
   drawmessageSimple(m,0-pixelOffset,150);
   waveMessage(m,0-pixelOffset,200);
-  text("gap",10,20);
 }
 ```
 
