@@ -13,6 +13,19 @@ in the `setup()` function calculate the number of characters required to fill th
 
 The calculation will be the width of the canvas `width` divided by the width of a character `gap` you will need to do this as the last line of the `setup()` function.
 
+You will need to modify the call to the `segment()` function to use this new variable rather than a fixed value
+
+```
+function draw() {
+  background(200);
+  logicSimple();
+  let m = segment(message, p, 30);
+  drawmessageSimple(m,0-pixelOffset,150);
+  waveMessage(m,0-pixelOffset,200);
+  text("gap",10,20);
+}
+```
+
 ## secondary task - clean up
 
 You will notice that there is still a single character on the right hand side **popping** onto the screen still, make a change to your width calculation to remove this problem.
