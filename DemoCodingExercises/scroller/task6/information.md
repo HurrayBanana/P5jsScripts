@@ -1,4 +1,4 @@
-# Strectching the image to fill the canvas
+# Strectching the message to fill the canvas
 
 Currently the scrolling message starts somewhere to the left of the screen
 
