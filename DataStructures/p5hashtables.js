@@ -1,5 +1,5 @@
 let hash;
-let messages = ["the quick brown fox jumped over the lazy dog","ABC","XYZ", "EFG", "CBA", "ABD", "BAC", "BRAIN","DAVE","dave","CAR"];
+let messages = ["the", "quick", "brown", "fox", "jumped", "over", "lazy", "dog","ABC","XYZ", "EFG", "CBA", "ABD", "BAC", "BRAIN","DAVE","dave","CAR"];
 const EMPTY = "< -- >";
 const NULL = -1;
 const MESSAGE = 0;
@@ -32,7 +32,7 @@ function setup() {
 function setuptables(){
     let size = 30;
     if (mode == NEXT) 
-        size *= 2;
+        size *= 1;
 
     hashtable = new Array(size);
     overflowtable = new Array(size);
