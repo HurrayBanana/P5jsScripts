@@ -31,8 +31,9 @@ function setup() {
 
 function setuptables(){
     let size = 30;
+    //double space for nex available position (so equivalent to overflow)
     if (mode == NEXT) 
-        size *= 1;
+        size *= 2;
 
     hashtable = new Array(size);
     overflowtable = new Array(size);
