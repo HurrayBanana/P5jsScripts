@@ -1,4 +1,3 @@
-let hash;
 let messages = [];
 //constants
 const EMPTY = "< -- >";
