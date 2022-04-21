@@ -70,6 +70,8 @@ function methodchanged(){
 
 /* perform hash function on message 
  Need to mod by table size to keep in range
+ This simple function just sums the ascii value of
+ each character of the word
 */
 function hashString(stringValue, scale){
     h = 0
@@ -109,7 +111,6 @@ function setuptables(){
         size *= 2;
   
     hashtable = new Array(size);
-    overflowtable = new Array(1);
 
     for (let p = 0; p < hashtable.length; p++) {
         let b = []
@@ -117,12 +118,14 @@ function setuptables(){
         b.push(NULL);
         hashtable[p] = b;
     }
-    
-    for (let p = 0; p < 1/*overflowtable.length*/; p++) {
-        let b = []
-        b.push(EMPTY);
-        b.push(NULL);
-        overflowtable[p] = b;
+    if (mode == OVERFLOW) {
+      overflowtable = new Array(1);
+      for (let p = 0; p < 1; p++) {
+          let b = []
+          b.push(EMPTY);
+          b.push(NULL);
+          overflowtable[p] = b;
+      }
     }
     
 }
@@ -172,6 +175,7 @@ function setoverflow(message){
   overflowtable[freespace][MESSAGE] = message;
   return freespace++;
 }
+
 function nextAvailable(pos, message){
   count = 0;
   searchPos = pos
@@ -191,6 +195,7 @@ function nextAvailable(pos, message){
     storehash(searchPos, message + " [collision @" + pos + "]", NULL);
     //hashtable[searchPos][MESSAGE] = message + " [collision]";
 }
+
 function appendhash(loc, mess, link){
     //console.log("store@"+loc);
     dave = [mess,link];
@@ -220,6 +225,7 @@ function draw() {
     else
         NextposDisplay();
 }
+
 function drawSpeed(){
   let v = slspeed.value();
   let w = slspeed.size().width;
